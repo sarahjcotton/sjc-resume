@@ -5,48 +5,71 @@ body{
 	font-weight: 300;
 }
 
-h1{
-	font-family: Montserrat;
+h1, h2{
+	color: #4B4237;
+	text-transform: uppercase;
+}
+
+h1, .role{
+
 	font-weight: 500;
 }
 
-h2{
-	font-family: Montserrat;
-}
-
-h4{
-	font-size: calc(1.275rem + .2vw);
-}
-
-a, a:link, a:hover, a:visited{
+.details a, .details a:link, .details a:hover, .details a:visited{
 	color: #fff;
 }
 
-hr{
-	margin: 0;
-    color: #439A86;
+.ref a, .ref a:link, .ref a:hover, .ref a:visited{
+    color: #D5A021;
 }
 
-.about{
-	padding-top: 40px;
+hr{
+	margin: 40px 0 0 0;	
+    color: #D5A021;
 }
+
+.section{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
 .sub{
-	color: #439A86;
+	color: #D5A021;
+}
+
+.responsibilities, .sub{
+	padding-top: 20px;
 }
 
 .details{
-	background-color: #439A86;
+	background-color: #D5A021;
 	color: #fff;
 	padding: 5px 0px 5px 0px;
 }
 
 .icon{
 	text-align: center;
-	border-right: 1px solid #fff;
 }
 
-.icon:last-child{
-    border: 0;
+@media only screen and (max-width: 767px) {
+  .icon {
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .icon:last-child{
+		border: 0;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.icon{		
+		border-right: 1px solid #fff;
+	}
+
+	.icon:last-child{
+		border: 0;
+	}
 }
 
 .skills, .references{
@@ -60,7 +83,7 @@ hr{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	margin-bottom: 5px;
-	background-color: #439A86;
+	background-color: #A49694;
 	color: white;
 }
 
@@ -73,19 +96,15 @@ hr{
 .mysql {width: 80%;}
 .git {width: 70%; }
 .css {width: 65%;}
-.sass {width: 40%;}
-.html5 {width: 40%;}
+.sass {width: 50%;}
+.bs {width: 45%;}
+.html5 {width: 43%;}
 .js {width: 40%;}
-.bs {width: 40%;}
 
-.section{
-	padding-top: 40px;
+::selection {
+  background: #ede7d9; /* WebKit/Blink Browsers */
 }
 
-.responsibilities{
-	padding-top: 20px;
-}
-
-.role{
-	font-weight: 500;
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
 }
