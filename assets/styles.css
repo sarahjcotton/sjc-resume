@@ -1,0 +1,91 @@
+* {box-sizing: border-box}
+
+body{
+	font-family: Montserrat;
+	font-weight: 300;
+}
+
+h1{
+	font-family: Montserrat;
+	font-weight: 500;
+}
+
+h2{
+	font-family: Montserrat;
+}
+
+h4{
+	font-size: calc(1.275rem + .2vw);
+}
+
+a, a:link, a:hover, a:visited{
+	color: #fff;
+}
+
+hr{
+	margin: 0;
+    color: #439A86;
+}
+
+.about{
+	padding-top: 40px;
+}
+.sub{
+	color: #439A86;
+}
+
+.details{
+	background-color: #439A86;
+	color: #fff;
+	padding: 5px 0px 5px 0px;
+}
+
+.icon{
+	text-align: center;
+	border-right: 1px solid #fff;
+}
+
+.icon:last-child{
+    border: 0;
+}
+
+.skills, .references{
+	width: 100%;
+	display: grid;
+}
+
+.skill-level {
+	float: left;
+	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	background-color: #439A86;
+	color: white;
+}
+
+.skill{
+	float: left;
+	padding-left: 0.4rem;
+}
+
+.php {width: 90%;}
+.mysql {width: 80%;}
+.git {width: 70%; }
+.css {width: 65%;}
+.sass {width: 40%;}
+.html5 {width: 40%;}
+.js {width: 40%;}
+.bs {width: 40%;}
+
+.section{
+	padding-top: 40px;
+}
+
+.responsibilities{
+	padding-top: 20px;
+}
+
+.role{
+	font-weight: 500;
+}
